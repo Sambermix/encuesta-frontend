@@ -7,7 +7,7 @@ const candidatos = [
   { id: 2, nombre: "Julio Reniero", partido: " ", imagen: "/julio.jpg" },
   { id: 3, nombre: "Perla Muñoz", partido: " ", imagen: "/perla.jpg" },
   { id: 4, nombre: "Aldo Minetti", partido: " ", imagen: "/aldo.jpeg" },
-  { id: 4, nombre: "Aldo Minetti", partido: " ", imagen: "/guillermo.jpeg" }
+  { id: 4, nombre: "Guillermo Schrenck", partido: " ", imagen: "/guillermo.jpg" }
 ];
 
 function App() {
