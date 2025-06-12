@@ -7,7 +7,7 @@ const candidatos = [
   { id: 2, nombre: "Julio Reniero", partido: " ", imagen: "/julio.jpg" },
   { id: 3, nombre: "Perla Muñoz", partido: " ", imagen: "/perla.jpg" },
   { id: 4, nombre: "Aldo Minetti", partido: " ", imagen: "/aldo.jpeg" },
-  { id: 4, nombre: "Guillermo Schrenck", partido: " ", imagen: "/guillermo.jpg" }
+  { id: 5, nombre: "Guillermo Schrenck", partido: " ", imagen: "/guillermo.jpg" }
 ];
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
     <div style={{
       padding: "2rem",
       fontFamily: "Arial, sans-serif",
-      background: "linear-gradient(to bottom, #cce7ff, #ffffff)", // celeste a blanco
+      background: "linear-gradient(to bottom, #cce7ff, #ffffff)",
       minHeight: "100vh"
     }}>
       <h1 style={{
@@ -107,8 +107,17 @@ function App() {
           </div>
         ))}
       </div>
+
+      <footer style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: '#555' }}>
+        <p>
+          Esta encuesta electoral <strong>no es oficial</strong>. Es una encuesta ciudadana sin valor legal,
+          creada con fines informativos y de participación para conocer la opinión pública de los vecinos
+          sobre las próximas elecciones a concejales en la localidad.
+        </p>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
