@@ -14,7 +14,7 @@ function App() {
   const [votos, setVotos] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:3001/votos")
+    axios.get("https://encuesta-backend-27c6.onrender.com/votos")
       .then((res) => setVotos(res.data))
       .catch((error) => console.error("Error al obtener votos:", error));
   }, []);
@@ -25,7 +25,7 @@ function App() {
       return;
     }
 
-    axios.post("http://localhost:3001/votar", { id })
+    axios.post("https://encuesta-backend-27c6.onrender.com/votar", { id })
       .then(() => {
         setVotos((prev) => ({
           ...prev,
@@ -109,24 +109,22 @@ function App() {
       </div>
 
       <footer
-  translate="no"
-  style={{
-    marginTop: '2rem',
-    textAlign: 'center',
-    fontSize: '0.9rem',
-    color: '#555'
-  }}
->
-  <p>
-    Esta encuesta electoral <strong>no es oficial</strong>. Es una encuesta ciudadana sin valor legal,
-    creada con fines informativos y de participación para conocer la opinión pública de los vecinos
-    sobre las próximas elecciones a concejales en la localidad.
-  </p>
-</footer>
-
+        translate="no"
+        style={{
+          marginTop: '2rem',
+          textAlign: 'center',
+          fontSize: '0.9rem',
+          color: '#555'
+        }}
+      >
+        <p>
+          Esta encuesta electoral <strong>no es oficial</strong>. Es una encuesta ciudadana sin valor legal,
+          creada con fines informativos y de participación para conocer la opinión pública de los vecinos
+          sobre las próximas elecciones a concejales en la localidad.
+        </p>
+      </footer>
     </div>
   );
 }
 
 export default App;
-
