@@ -108,13 +108,18 @@ function App() {
         ))}
       </div>
 
-      <footer style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: '#555' }}>
-        <p>
-          Esta encuesta electoral <strong>no es oficial</strong>. Es una encuesta ciudadana sin valor legal,
-          creada con fines informativos y de participación para conocer la opinión pública de los vecinos
-          sobre las próximas elecciones a concejales en la localidad.
-        </p>
-      </footer>
+      <footer style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: '#555' }}
+  dangerouslySetInnerHTML={{
+    __html: `
+      <p>
+        Esta encuesta electoral <strong>no es oficial</strong>. Es una encuesta ciudadana sin valor legal,
+        creada con fines informativos y de participación para conocer la opinión pública de los vecinos
+        sobre las próximas elecciones a concejales en la localidad.
+      </p>
+    `
+  }}
+/>
+
     </div>
   );
 }
